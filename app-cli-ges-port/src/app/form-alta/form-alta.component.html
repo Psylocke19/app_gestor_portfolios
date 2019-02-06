@@ -1,0 +1,21 @@
+<h2>
+  {{ titulo }}
+</h2>
+  {{ etiqueta_nombre }}: <input type="text"
+  [placeholder]="placeholder_nombre"
+  [(ngModel)] = "nombreIntroducido"
+  />
+  <br/>
+  Descripción: <input type="text"
+  placeholder ="Introduce tu descripción"
+  [(ngModel)] = "descripcionIntroducida"
+  />
+  <br/>
+  Fichero: <input type="text"
+  placeholder="Introduce el fichero"
+  [(ngModel)] = "ficheroIntroducido"
+  />
+  <br/>
+  <input type="button" value="Limpiar" (click)="limpiar()"/>
+  <input type="button" value="Añadir" (click)="darDeAlta()"/>
+<p>{{ nombreIntroducido }}</p>
