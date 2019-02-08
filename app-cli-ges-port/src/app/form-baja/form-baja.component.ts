@@ -4,8 +4,8 @@ import {PortfoliosService} from 'app/portfolios.service';
 @Component({
   selector: 'app-form-baja',
   templateUrl: './form-baja.component.html',
-  styleUrls: ['./form-baja.component.css']
-  //providers: [PortfoliosService] 
+  styleUrls: ['./form-baja.component.css'],
+  providers: [PortfoliosService] 
   
 })
 export class FormBajaComponent implements OnInit {
